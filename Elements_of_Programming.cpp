@@ -65,7 +65,7 @@ string next_word(string s) {
         if (c == current) {
             count += 1;
         } else {
-            res += string(count) + string(c);
+            res += to_string(count) + c;
             count = 1;
             current = c;
         }
